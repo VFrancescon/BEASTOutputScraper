@@ -9,9 +9,13 @@ BEAST is a software developed for the University of Leeds for the COMP5400M modu
 
 # File Structure
 * scaper.py
-
 Takes all the info out of the txt dump and formats it in a csv so we can plot it.
 Might use matplotlib later, or just do the plotting in MATLAB.
+
+
+* BeastPlotter.m 
+Takes the csv outputted by the scaper script and plots is.
+
 
 # Author
 Vittorio Francescon

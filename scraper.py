@@ -8,10 +8,10 @@
 import sys
 def main():
     output_filename = ""
-    first_line = "Generation, Avg Fitness, Best Fitness\n"
+    first_line = "Generation, AvgFitness, BestFitness\n"
 
     if(len(sys.argv)) == 3:
-        output_filename = sys.argv[2]
+        output_filename = "csv_outs/" + sys.argv[2] + ".csv"
     else:
         output_filename = "output.csv"
     fileINPUT = open(sys.argv[1], 'r')

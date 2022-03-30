@@ -1,2 +1,3 @@
 *.txt
-*.csv
+log_dumps/
+csv_outs/
