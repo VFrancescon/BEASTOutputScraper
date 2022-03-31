@@ -1,0 +1,28 @@
+%% Author: Vittorio Francescon
+%% University of Leeds
+%% Script to generate plots for the COMP5400 Coursework 1
+
+
+path = "/home/vittorio/comp5400/BEASTOutputScraper/csv_outs/";
+preyEND = "PREY.csv";
+predatorEND = "PREDATOR.csv";
+
+%%filename = "input from user"
+
+preyFile = strcat(path, filename, preyEND);
+predatorFile = strcat(path, filename, predatorEND); 
+
+input_prey = readtable(preyFile);
+input_predator = readtable(predatorFile);
+
+tiledlayout("flow")
+plot(input_prey.Generation, input_prey.AvgFitness)
+hold on
+plot(input_prey.Generation, input_prey.BestFitness)
+hold off
+title('Generation Count vs Fitness')
+xlabel('Generation Count')
+ylabel('Fitness')
+legend("Avg Fitness", "Best Fitness")
+
+nexttile
