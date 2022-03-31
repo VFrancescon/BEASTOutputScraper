@@ -3,6 +3,11 @@
 %% Script to generate plots for the COMP5400 Coursework 1
 %% Q6, plot of first 100 gens
 
+%% USAGE: From the command line, instantiate a variable filename
+%% This should contain the file name (no path)
+%% the assumption is that you generated the csvs with the chaseScraper.py Script
+%% Therefore all the file names are the same, with A, B and C for the three iterations
+%% a plot will be generated for you to save as a png
 
 path = "/home/vittorio/comp5400/BEASTOutputScraper/csv_outs/";
 preyEND = "PREY.csv";

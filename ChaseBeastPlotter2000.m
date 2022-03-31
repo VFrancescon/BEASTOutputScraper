@@ -1,8 +1,13 @@
 %% Author: Vittorio Francescon
 %% University of Leeds
 %% Script to generate plots for the COMP5400 Coursework 1
-%% Q6, plot of first 100 gens
+%% Q6, plot of first 2000 gens
 
+%% USAGE: From the command line, instantiate 4 variables, one per student shorthand
+%% This should not contain the path.
+%% the assumption is that you generated the csvs with the chaseScraper.py Script
+%% Therefore all the file names are the same, with the student name shorthand being the only difference
+%% a plot will be generated for you to save as a png
 
 path = "/home/vittorio/comp5400/BEASTOutputScraper/csv_outs/";
 preyEND = "PREY.csv";

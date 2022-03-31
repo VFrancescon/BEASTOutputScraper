@@ -1,10 +1,24 @@
-# scraper.py
+# chaseScraper.py
 # Author: Vittorio Francescon
 #  for: University of Leeds
 # Description:
 # Simple scraper to convert a log dump from BEAST into a csv format
 #
 
+##
+# USAGE:
+# run the script giving a txt file as argument
+# optionally, give a output file name (fout) as well
+# the program will output two CSV files in csv_outs/ with file names foutPREDATOR/PREY.csv
+##
+
+##
+# NOTE:
+# this is not a programming assignment or module and the script is extremely simple
+# hence I will not be commenting it.
+# only note is that the actual parsing section is taken from stack overflow
+# https://stackoverflow.com/questions/4289331/how-to-extract-numbers-from-a-string-in-python
+##
 import sys
 def main():
     output_filename1 = ""
